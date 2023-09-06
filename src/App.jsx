@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ListProdutcs from "./Components/Page/Products/productcard";
 import Login from "./Components/Page/Session/login";
+import Register from "./Components/Page/Session/register"
 import { useState } from "react";
 
 function App() {
@@ -15,9 +16,11 @@ function App() {
         <Routes>
           <Route exact path="/product/card" element={<ListProdutcs />} />
           <Route exact path="/login" element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>} ></Route>
+          <Route exact path="/register" element={<Register></Register>} ></Route>
         </Routes>
       </main>
       <Login/>
+      <Register/>
       </BrowserRouter>
       
     </div>

@@ -7,9 +7,10 @@ import Container from 'react-bootstrap/esm/Container';
 import { Card, Form } from 'react-bootstrap';
 import Swal from "sweetalert2"
 import "sweetalert2/dist/sweetalert2.css"
+import "./login.css"
 
 
-function MyCustomModal() {
+function LoginModal() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -125,4 +126,4 @@ const Login = ({ setUsuarioLogueado }) => {
   );
 };
 
-export default MyCustomModal;
+export default LoginModal;
