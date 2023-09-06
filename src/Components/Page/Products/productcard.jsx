@@ -1,6 +1,5 @@
 import React from 'react';
-import { CardGroup, Card, Pagination, Container, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { CardGroup, Card, Pagination, Container, Row, Button } from "react-bootstrap";
 
 
 function ListProdutcs() {
@@ -19,8 +18,10 @@ function ListProdutcs() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <Link to="/product/create" className='btn-proccess text-decoration-none text-center'>Buy</Link><br />
-          <Link to="/product/favorite" className='btn-proccess text-decoration-none text-center'>Favorite</Link>
+            <div className='d-flex align-items-center justify-content-between'>
+            <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+            <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+            </div>
         </Card.Footer>
       </Card>
       <Card className='col'>
