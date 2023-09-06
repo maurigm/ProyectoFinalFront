@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardGroup, Card, Pagination, Container, Row, Button } from "react-bootstrap";
+import { CardGroup, Card, Container, Row } from "react-bootstrap";
 
 
 function ListProdutcs() {
