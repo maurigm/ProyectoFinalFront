@@ -14,9 +14,10 @@ function App() {
       <BrowserRouter>
       <main>
         <Routes>
-          <Route exact path="/product/card" element={<ListProdutcs />} />
           <Route exact path="/login" element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>} ></Route>
           <Route exact path="/register" element={<Register></Register>} ></Route>
+          <Route exact path="/product/card" element={<ListProdutcs />} />
+          {/* <Route exact path="*" element={<Error404/>} /> */}
         </Routes>
       </main>
       <Login/>
