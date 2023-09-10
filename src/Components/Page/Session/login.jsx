@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { login } from "../../helpers/queries";
-import { useForm } from "react-hook-form";
+//import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/esm/Container';
 import { Card, Form } from 'react-bootstrap';
-import Swal from "sweetalert2"
-import "sweetalert2/dist/sweetalert2.css"
+//import Swal from "sweetalert2"
+//import "sweetalert2/dist/sweetalert2.css"
 //import "./login.css"
 
 

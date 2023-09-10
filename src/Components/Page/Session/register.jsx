@@ -4,8 +4,8 @@ import { Card, Form, Button, Modal } from 'react-bootstrap';
 //import '../../Registro.css';
 import { crearUsuario } from "../../helpers/queries";
 //import Swal from 'sweetalert2';
-import "sweetalert2/dist/sweetalert2.css";
-import { useForm } from "react-hook-form";
+//import "sweetalert2/dist/sweetalert2.css";
+//import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom"; 
 
 
