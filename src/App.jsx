@@ -12,6 +12,7 @@ function App() {
     <>
     <div>
       <BrowserRouter>
+      <nav/>
       <main>
         <Routes>
           <Route exact path="/login" element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>} ></Route>
