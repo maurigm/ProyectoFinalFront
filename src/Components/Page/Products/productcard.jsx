@@ -7,6 +7,17 @@ const images = [
     ['https://www.funcionalweb.com/sites/default/files/2019-08/HORIZON_0.png'],
     ['https://www.funcionalweb.com/sites/default/files/2019-08/SOUL%20GRAY_0.png'],
     ['https://www.funcionalweb.com/sites/default/files/2019-08/STREET%20CAMEL.png'],
+    ['https://www.funcionalweb.com/sites/default/files/2019-08/RANDER%20GRAY.png'],
+    ['https://www.funcionalweb.com/sites/default/files/2021-01/TERRA%20BLACK.png'],
+    ['https://www.funcionalweb.com/sites/default/files/2021-01/LANDER%20BROWN_0.png'],
+    ['https://www.funcionalweb.com/sites/default/files/2021-05/drill-barrel.png'],
+    ['https://www.funcionalweb.com/sites/default/files/2021-05/tracker.png'],
+    ['https://www.funcionalweb.com/sites/default/files/2019-08/MAUI%20GRAY.png'],
+    ['https://www.funcionalweb.com/sites/default/files/2019-08/CAPRI%20GRAY_0.png'],
+    ['https://www.funcionalweb.com/sites/default/files/2019-08/BALI%20GRAY.png'],
+    ['https://www.funcionalweb.com/sites/default/files/2021-01/3002_0.png'],
+    ['https://www.funcionalweb.com/sites/default/files/2021-05/3901.png']
+
 ];
 
 function ListProdutcs() {
@@ -105,13 +116,12 @@ function ListProdutcs() {
                 <Row lg={5} md={3} sm={2} xs={1}>
                     <div>
                         <Card>
-                            <Card.Img variant="top" src="holder.js/100px160" />
+                            <Card.Img variant="top" src={images[5]} />
                             <Card.Body>
-                                <Card.Title>Street</Card.Title>
+                                <Card.Title>Rander</Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This card has even longer content than the
-                                    first to show that equal height action.
+                                    Botín de seguridad ultra Premium. Óptimo calce y comodidad.
+                                    Diseño exclusivo. Tecnología y componentes de vanguardia.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -121,13 +131,12 @@ function ListProdutcs() {
                     </div>
                     <div>
                         <Card>
-                            <Card.Img variant="top" src="holder.js/100px160" />
+                            <Card.Img variant="top" src={images[6]} />
                             <Card.Body>
-                                <Card.Title>Street</Card.Title>
+                                <Card.Title>Terra</Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This card has even longer content than the
-                                    first to show that equal height action.
+                                    Botín de seguridad ultra Premium. Óptimo calce y comodidad.
+                                    Diseño exclusivo. Tecnología y componentes de vanguardia.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -137,13 +146,13 @@ function ListProdutcs() {
                     </div>
                     <div>
                         <Card>
-                            <Card.Img variant="top" src="holder.js/100px160" />
+                            <Card.Img variant="top" src={images[7]} />
                             <Card.Body>
-                                <Card.Title>Street</Card.Title>
+                                <Card.Title>Lander</Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This card has even longer content than the
-                                    first to show that equal height action.
+                                    Zapatilla de seguridad ultra ventilada de muy alta gama. Confort extremo.
+                                    Diseño exclusivo. Estética,
+                                    tecnología y componentes de vanguardia.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -153,13 +162,13 @@ function ListProdutcs() {
                     </div>
                     <div>
                         <Card>
-                            <Card.Img variant="top" src="holder.js/100px160" />
+                            <Card.Img variant="top" src={images[8]} />
                             <Card.Body>
-                                <Card.Title>Street</Card.Title>
+                                <Card.Title>Drill</Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This card has even longer content than the
-                                    first to show that equal height action.
+                                    Bota petrolera de alta gama.
+                                    Máximo confort. Óptimo calce.
+                                    Componentes Premium.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -169,13 +178,13 @@ function ListProdutcs() {
                     </div>
                     <div>
                         <Card>
-                            <Card.Img variant="top" src="holder.js/100px160" />
+                            <Card.Img variant="top" src={images[9]} />
                             <Card.Body>
-                                <Card.Title>Street</Card.Title>
+                                <Card.Title>Tracker</Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This card has even longer content than the
-                                    first to show that equal height action.
+                                    Borceguí de última generación.
+                                    Confort garantizado.
+                                    Tecnología y componentes de alta gama.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -184,17 +193,17 @@ function ListProdutcs() {
                         </Card>
                     </div>
                 </Row>
-                <legend>Michelin</legend>
+                <legend>Line Mujer</legend>
                 <Row xl={5} md={3} sm={2} xs={1}>
                     <div>
                         <Card>
-                            <Card.Img variant="top" src="holder.js/100px160" />
+                            <Card.Img variant="top" src={images[10]} />
                             <Card.Body>
-                                <Card.Title>Street</Card.Title>
+                                <Card.Title>Maui</Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This card has even longer content than the
-                                    first to show that equal height action.
+                                    Zapatilla ultraliviana de seguridad. Diseñada por y para mujeres.
+                                    Materiales nobles ultra premium y tecnología de vanguardia.
+                                    Confort sin límites, femineidad y máxima protección.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -204,13 +213,13 @@ function ListProdutcs() {
                     </div>
                     <div>
                         <Card>
-                            <Card.Img variant="top" src="holder.js/100px160" />
+                            <Card.Img variant="top" src={images[11]} />
                             <Card.Body>
-                                <Card.Title>Street</Card.Title>
+                                <Card.Title>Capri</Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This card has even longer content than the
-                                    first to show that equal height action.
+                                    Botita urbana ultraliviana de seguridad. Diseñada por y para mujeres.
+                                    Materiales nobles ultra premium y tecnología de vanguardia.
+                                    Confort sin límites, femineidad y máxima protección.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -220,13 +229,13 @@ function ListProdutcs() {
                     </div>
                     <div>
                         <Card>
-                            <Card.Img variant="top" src="holder.js/100px160" />
+                            <Card.Img variant="top" src={images[12]} />
                             <Card.Body>
-                                <Card.Title>Street</Card.Title>
+                                <Card.Title>Bali</Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This card has even longer content than the
-                                    first to show that equal height action.
+                                    Zapatilla ultraliviana de seguridad. Diseñada por y para mujeres.
+                                    Materiales nobles ultra premium y tecnología de vanguardia.
+                                    Confort sin límites, femineidad y máxima protección.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -236,13 +245,13 @@ function ListProdutcs() {
                     </div>
                     <div>
                         <Card>
-                            <Card.Img variant="top" src="holder.js/100px160" />
+                            <Card.Img variant="top" src={images[13]} />
                             <Card.Body>
-                                <Card.Title>Street</Card.Title>
+                                <Card.Title>3002</Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This card has even longer content than the
-                                    first to show that equal height action.
+                                    Botín de seguridad de alto confort. Diseño clásico.
+                                    Componentes de alta calidad.
+                                    Ideal para trabajar cómodo en condiciones muy exigidas.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -252,13 +261,12 @@ function ListProdutcs() {
                     </div>
                     <div>
                         <Card>
-                            <Card.Img variant="top" src="holder.js/100px160" />
+                            <Card.Img variant="top" src={images[14]} />
                             <Card.Body>
-                                <Card.Title>Street</Card.Title>
+                                <Card.Title>3901</Card.Title>
                                 <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This card has even longer content than the
-                                    first to show that equal height action.
+                                    Super confort y altas prestaciones. Componentes de alta calidad.
+                                    Comodidad aún en trabajos de condiciones muy exigidas
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
