@@ -5,6 +5,7 @@ import ListProdutcs from "./Components/Page/Products/productcard";
 import Login from "./Components/Page/Session/login";
 import Register from "./Components/Page/Session/register"
 import { useState } from "react";
+import Footer from "./Components/layout/Footer";
 
 
 
@@ -26,6 +27,7 @@ function App() {
       </main>
       <Login/>
       <Register/>
+      <Footer/>
       </BrowserRouter>
       
     </div>

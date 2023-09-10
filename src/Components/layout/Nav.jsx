@@ -1,40 +1,38 @@
-import React from 'react'
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import '@fortawesome/fontawesome-free/css/all.css';
 
-function Nav() {
+
+function BasicExample() {
   return (
-   <nav className="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img src="/Img/Cards/navbar.png" alt="Logo" width="30" height="30" className="d-inline-block align-text-top" />
-          </a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/Html/index.html">Inicio</a>
-              </li>
-            </ul>
-          </div>
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
-              <a className="nav-link" href="contacto.html">Contacto</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#"><i className="fas fa-search"></i></a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#"><i className="fas fa-star"></i></a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#"><i className="fas fa-shopping-cart"></i></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-  )
+    <Navbar expand="lg" bg="dark" variant="dark" fixed="top">
+    <Container>
+      <Navbar.Brand href="#">
+        <img
+          alt=""
+          src="/Img/Cards/navbar.png"
+          width="30"
+          height="30"
+          className="d-inline-block align-top"
+        />{' '}
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <Nav.Link href="#home">Inicio</Nav.Link>
+        </Nav>
+        <Nav>
+          <Nav.Link href="contacto.html">Contacto</Nav.Link>
+          <Nav.Link href="#"><i className="fas fa-search"></i></Nav.Link>
+          <Nav.Link href="#"><i className="fas fa-star"></i></Nav.Link>
+          <Nav.Link href="#"><i className="fas fa-shopping-cart"></i></Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
+);
 }
 
-export default Nav
+export default BasicExample;
