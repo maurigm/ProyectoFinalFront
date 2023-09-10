@@ -3,6 +3,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '@fortawesome/fontawesome-free/css/all.css';
+import LoginModal from '../Page/Session/login';
+import RegisterModal from '../Page/Session/register';
+
+
 
 
 function BasicExample() {
@@ -28,10 +32,13 @@ function BasicExample() {
           <Nav.Link href="#"><i className="fas fa-search"></i></Nav.Link>
           <Nav.Link href="#"><i className="fas fa-star"></i></Nav.Link>
           <Nav.Link href="#"><i className="fas fa-shopping-cart"></i></Nav.Link>
+          <LoginModal/>
+          <RegisterModal/>
         </Nav>
       </Navbar.Collapse>
     </Container>
   </Navbar>
+  
 );
 }
 
