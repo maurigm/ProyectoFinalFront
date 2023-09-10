@@ -1,0 +1,48 @@
+.footer {
+    background-color: #333; /* Cambia el color de fondo según tu diseño */
+    color: #fff; /* Cambia el color del texto según tu diseño */
+    padding: 30px 0;
+    margin-top: 50px;
+  }
+  
+  .logo {
+    max-width: 100px; /* Ajusta el tamaño del logo redondo */
+  }
+  
+  .qr-code {
+    max-width: 100px; /* Ajusta el tamaño del código QR */
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons-container {
+    margin-top: 40px; /* Agrega margen superior para separar los iconos de redes sociales del código QR */
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+
+  }
+  #icon{
+    margin-left: -200px;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px; /* Espacio entre los iconos de redes sociales */
+  }
+  
+  .social-icons a {
+    color: #fff; /* Color de los iconos de redes sociales */
+    font-size: 24px; /* Tamaño de los iconos de redes sociales */
+    text-decoration: none;
+  }
+  
