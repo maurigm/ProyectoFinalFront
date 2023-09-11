@@ -10,9 +10,7 @@ function App() {
     <div>
       <BrowserRouter>
       <main>
-        {/* <ProductPage/> */}
-        <Cart/>
-        {/* <Buy/> */}
+      
       </main>
       </BrowserRouter>
     </div>
