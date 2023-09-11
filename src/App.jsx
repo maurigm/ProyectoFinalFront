@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ListProdutcs from "./Components/Page/Products/productcard";
+//import ProductPage from "./Components/Page/Products/productpage";
+ import Cart from "./Components/Page/Cart/Cart";
+// import Buy from "./Components/Page/Cart/Buy";
 
 function App() {
   return (
@@ -8,10 +10,9 @@ function App() {
     <div>
       <BrowserRouter>
       <main>
-        <Routes>
-          <Route exact path="/product/card" element={<ListProdutcs />} />
-      {/* aqui se van a subir los cambios anntes de enviarlos a produccion */}
-        </Routes>
+        {/* <ProductPage/> */}
+        <Cart/>
+        {/* <Buy/> */}
       </main>
       </BrowserRouter>
     </div>
