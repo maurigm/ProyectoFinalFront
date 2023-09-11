@@ -12,7 +12,7 @@ function FavoriteProductsPage() {
 
   return (
     <Container>
-      <h1>Mis Productos Favoritos</h1>
+      <h1>My favorite products</h1>
       <Row>
         {favoriteProducts.map((product) => (
           <Col key={product.id} md={4} sm={6}>
