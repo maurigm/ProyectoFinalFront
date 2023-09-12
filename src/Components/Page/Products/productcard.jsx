@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from "react";
 import { CardGroup, Card, Container, Row, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const images = [
     ["https://www.funcionalweb.com/sites/default/files/2019-08/CITY%20BLACK_0.png"],
@@ -27,7 +28,7 @@ function ListProdutcs() {
     return (
         <Container>
             <CardGroup>
-                <legend>Line Ultralight</legend>
+                <legend>Linea Ultralivianos</legend>
                 <Row lg={5} md={3} sm={2} xs={1}>
                     <div>
                         <Card>
@@ -42,8 +43,8 @@ function ListProdutcs() {
                             </Card.Body>
                             <Card.Footer>
                                 <div className='d-flex align-items-center justify-content-between'>
-                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
-                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                    <Link to="/product/create" className='btn-success text-decoration-none text-center'>Buy</Link>
+                                    <Link to="/product/favorite" className='btn-warning text-decoration-none text-center'>Favorite</Link>
                                 </div>
                             </Card.Footer>
                         </Card>
@@ -60,6 +61,10 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                </div>
                             </Card.Footer>
                         </Card>
                     </div>
@@ -75,7 +80,10 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                </div>
                             </Card.Footer>
                         </Card>
                     </div>
@@ -91,7 +99,10 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                </div>
                             </Card.Footer>
                         </Card>
                     </div>
@@ -107,12 +118,15 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                </div>
                             </Card.Footer>
                         </Card>
                     </div>
                 </Row>
-                <legend>Line PU/TPU</legend>
+                <legend>Linea PU/TPU</legend>
                 <Row lg={5} md={3} sm={2} xs={1}>
                     <div>
                         <Card>
@@ -140,7 +154,10 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                </div>
                             </Card.Footer>
                         </Card>
                     </div>
@@ -156,7 +173,10 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                </div>
                             </Card.Footer>
                         </Card>
                     </div>
@@ -172,7 +192,10 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                </div>
                             </Card.Footer>
                         </Card>
                     </div>
@@ -188,12 +211,15 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                </div>
                             </Card.Footer>
                         </Card>
                     </div>
                 </Row>
-                <legend>Line Mujer</legend>
+                <legend>Linea Mujer</legend>
                 <Row xl={5} md={3} sm={2} xs={1}>
                     <div>
                         <Card>
@@ -207,7 +233,10 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                </div>
                             </Card.Footer>
                         </Card>
                     </div>
@@ -223,7 +252,10 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                </div>
                             </Card.Footer>
                         </Card>
                     </div>
@@ -239,7 +271,10 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                </div>
                             </Card.Footer>
                         </Card>
                     </div>
@@ -255,7 +290,10 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                </div>
                             </Card.Footer>
                         </Card>
                     </div>
@@ -270,7 +308,10 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                </div>
                             </Card.Footer>
                         </Card>
                     </div>
@@ -279,19 +320,5 @@ function ListProdutcs() {
         </Container>
     );
 }
-
-// const paginationBasic = (
-//     <div>
-//       <Pagination>{items}</Pagination>
-//      <br />
-
-//      <Pagination size="lg">{items}</Pagination>
-//       <br />
-
-//      <Pagination size="sm">{items}</Pagination>
-//      </div>
-//     );
-
-//    render(paginationBasic);
 
 export default ListProdutcs;
