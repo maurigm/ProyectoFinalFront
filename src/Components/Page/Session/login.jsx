@@ -5,9 +5,9 @@ import { login } from "../../helpers/queries";
 import { useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/esm/Container';
 import { Card, Form } from 'react-bootstrap';
-//import Swal from "sweetalert2"
-//import "sweetalert2/dist/sweetalert2.css"
-//import "./login.css"
+import Swal from "sweetalert2"
+import "sweetalert2/dist/sweetalert2.css"
+import "./login.css"
 
 
 function LoginModal() {
@@ -18,7 +18,7 @@ function LoginModal() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button id="buttonlogin" variant="primary" onClick={handleShow}>
         Iniciar sesion
       </Button>
 
