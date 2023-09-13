@@ -7,7 +7,7 @@ import logo from "../../assets/logo.png";
 
 function Footer() {
   return (
-    <footer className="footer bg-dark mt-5">
+    <footer className="footer">
       <Container>
         <Row>
           <Col lg={3} md={3} sm={6}>

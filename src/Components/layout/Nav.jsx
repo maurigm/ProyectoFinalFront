@@ -7,12 +7,13 @@ import LoginModal from '../Page/Session/login';
 import RegisterModal from '../Page/Session/register';
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+import './Nav.css';
 
 
 
 function BasicExample() {
   return (
-    <Navbar expand="lg" bg="dark" variant="dark" fixed="top">
+    <Navbar expand="lg" variant="dark" fixed="top">
     <Container>
       <Navbar.Brand>
         <Link to="/">
