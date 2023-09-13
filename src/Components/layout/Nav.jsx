@@ -10,8 +10,8 @@ import './Nav.css';
 
 
 
+function BasicExample() {
 
-function MyNavbar() {
   return (
     <Navbar expand="lg" variant="dark" fixed="top">
     <Container>
@@ -27,6 +27,7 @@ function MyNavbar() {
         </Nav>
         <Nav className="ml-auto navbar-right">
           <Nav.Link href="#"><i className="fas fa-search"></i></Nav.Link>
+
           <Nav.Link href="/favorite"><i className="fas fa-star"></i></Nav.Link>
           <Nav.Link href="/product/card"><i className="fas fa-shopping-cart"></i></Nav.Link>
           <LoginModal/>

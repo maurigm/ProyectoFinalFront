@@ -58,12 +58,13 @@
     height: auto;
   }
 
+
   /*Estilos en las cards*/
 
   .card-text, .card-title {
     color: #f0f0f0;
   }
-  
+
   
   .card {
     background-color: #272932;
