@@ -10,8 +10,8 @@ import './Nav.css';
 
 
 
+function BasicExample() {
 
-function MyNavbar() {
   return (
     <Navbar expand="lg" variant="dark" fixed="top">
     <Container>
@@ -29,6 +29,7 @@ function MyNavbar() {
           <Nav.Link href="#"><i className="fas fa-search"></i></Nav.Link>
           <Nav.Link href="#"><i className="fas fa-star"></i></Nav.Link>
           <Nav.Link href="#"><i className="fas fa-shopping-cart"></i></Nav.Link>
+          
           <LoginModal/>
           <RegisterModal/>
 
