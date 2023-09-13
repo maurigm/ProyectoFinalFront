@@ -19,7 +19,7 @@ const images = [
     ['https://www.funcionalweb.com/sites/default/files/2021-01/3002_0.png'],
     ['https://www.funcionalweb.com/sites/default/files/2021-05/3901.png']
 
-];
+]; 
 
 function ListProdutcs() {
 
