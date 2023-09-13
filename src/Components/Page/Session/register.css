@@ -1,0 +1,5 @@
+.custom-button:hover {
+    background-color: #007bff; /* Cambia el color de fondo al hacer hover */
+    border-color: #007bff; /* Cambia el color del borde al hacer hover */
+    color: #ffffff; /* Cambia el color del texto al hacer hover */
+  }

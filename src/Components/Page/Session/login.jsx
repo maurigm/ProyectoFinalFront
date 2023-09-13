@@ -8,6 +8,8 @@ import { Card, Form } from 'react-bootstrap';
 import Swal from "sweetalert2"
 import "sweetalert2/dist/sweetalert2.css"
 import "./login.css"
+import { FaUserLock } from 'react-icons/fa';
+
 
 
 function LoginModal() {
@@ -18,8 +20,8 @@ function LoginModal() {
 
   return (
     <>
-      <Button id="buttonlogin" variant="primary" onClick={handleShow}>
-        Iniciar sesion
+      <Button id="buttonlogin" variant="primary" className="custom-button" onClick={handleShow}>
+      <FaUserLock />
       </Button>
 
       <Modal show={show} onHide={handleClose}>
