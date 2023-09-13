@@ -1,7 +1,5 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import '@fortawesome/fontawesome-free/css/all.css';
 import LoginModal from '../Page/Session/login';
 import RegisterModal from '../Page/Session/register';
@@ -11,12 +9,14 @@ import './Nav.css';
 
 
 
-function BasicExample() {
+
+
+function MyNavbar() {
   return (
     <Navbar expand="lg" variant="dark" fixed="top">
     <Container>
-      <Navbar.Brand>
-        <Link to="/">
+      <Navbar.Brand href="#">
+      <Link to="/">
           <img src={logo} alt="logo" width="100" />
         </Link>
       </Navbar.Brand>
@@ -25,13 +25,13 @@ function BasicExample() {
         <Nav className="me-auto">
           <Nav.Link href="#home">Inicio</Nav.Link>
         </Nav>
-        <Nav>
-          <Nav.Link href="contacto.html">Contacto</Nav.Link>
-          <Nav.Link href="#">Nosotros<i className="fas fa-search"></i></Nav.Link>
+        <Nav className="ml-auto">
+          <Nav.Link href="#"><i className="fas fa-search"></i></Nav.Link>
           <Nav.Link href="#"><i className="fas fa-star"></i></Nav.Link>
           <Nav.Link href="#"><i className="fas fa-shopping-cart"></i></Nav.Link>
           <LoginModal/>
           <RegisterModal/>
+
         </Nav>
       </Navbar.Collapse>
     </Container>
@@ -40,4 +40,4 @@ function BasicExample() {
 );
 }
 
-export default BasicExample;
+export default MyNavbar;
