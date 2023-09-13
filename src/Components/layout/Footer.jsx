@@ -1,16 +1,17 @@
 import React from 'react'
 import './Footer.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import logo from "../../assets/logo.png";
 
 
 
 function Footer() {
   return (
-    <footer className="footer bg-dark">
+    <footer className="footer">
       <Container>
         <Row>
           <Col lg={3} md={3} sm={6}>
-            <img src="/e1b4489f-29ce-4ed5-aabf-9760d56a22b6.jpg" alt="Logo" className="rounded-circle logo" />
+            <Image src={logo} alt="logo" width="150" />
           </Col>
           <Col lg={3} md={3} sm={6}>
             <h5>Enlaces</h5>
@@ -30,7 +31,7 @@ function Footer() {
           </Col>
           <Col lg={3} md={3} sm={6}>
             <h5>Código QR</h5>
-            <img src="/descarga.png" alt="Código QR" className="qr-code" />
+           
             <ul className="social-icons text-center" id="icon">
               <li><a href="#"><i className="fab fa-facebook"></i></a></li>
               <li><a href="#"><i className="fab fa-twitter"></i></a></li>

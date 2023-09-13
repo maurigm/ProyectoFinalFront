@@ -1,0 +1,79 @@
+.carousel{
+
+    background-attachment: fixed;
+    margin-top: 55px;
+  }
+
+  .mi-componente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #272932; /* Color de fondo del componente */
+    text-align: center;
+  }
+  
+  .texto-izquierda {
+    
+    padding: 2em;
+    color: #333; /* Color del texto */
+    display: block;
+    display: inline-block; /* Esto permite que el contenido se centre horizontalmente */
+    text-align: left; /* Alinea el texto dentro de texto-izquierda a la izquierda */
+}
+  
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:white;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+  .cta-button {
+    background-color: #007bff; /* Color del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+  }
+  
+  .imagen-derecha img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  /*Estilos en las cards*/
+
+  .card-text, .card-title {
+    color: #f0f0f0;
+  }
+  
+  
+  .card {
+    background-color: #272932;
+    box-shadow: 0px 4px 8px rgba(82, 82, 82, 0.315);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Añadida la transformación */
+  }
+  
+  .card:hover {
+    background-color: hsl(34, 100%, 38%);
+    color: #000000;
+    font-weight: bold;
+    transform: scale(1.05); /* Hace que la tarjeta se agrande un poco al hacer hover */
+  }
