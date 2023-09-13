@@ -1,5 +1,5 @@
 .footer {
-    background-color: #333; /* Cambia el color de fondo según tu diseño */
+    background-color: hsl(34, 100%, 38%); /* Cambia el color de fondo según tu diseño */
     color: #fff; /* Cambia el color del texto según tu diseño */
     padding: 30px 0;
    
@@ -45,5 +45,4 @@
     font-size: 24px; /* Tamaño de los iconos de redes sociales */
     text-decoration: none;
   }
-  
   
