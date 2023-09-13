@@ -11,6 +11,7 @@ import './Nav.css';
 
 
 
+
 function BasicExample() {
   return (
     <Navbar expand="lg" variant="dark" fixed="top">
@@ -30,6 +31,7 @@ function BasicExample() {
           <Nav.Link href="#">Nosotros<i className="fas fa-search"></i></Nav.Link>
           <Nav.Link href="#"><i className="fas fa-star"></i></Nav.Link>
           <Nav.Link href="#"><i className="fas fa-shopping-cart"></i></Nav.Link>
+          
           <LoginModal/>
           <RegisterModal/>
         </Nav>
