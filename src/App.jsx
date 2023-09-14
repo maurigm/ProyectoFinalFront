@@ -7,6 +7,8 @@ import { useState } from "react";
 import FavoriteProductsPage from "./Components/Page/fav/fav";
 import Home from "./Components/Page/Home/Home"
 import Footer from "./Components/layout/Footer";
+import Error404 from "./Components/Page/Error404/error404";
+import Team from "./Components/Page/Nosotros/nosotros";
 
 
 
@@ -24,7 +26,9 @@ function App() {
               <Route exact path="/" element={<Home/>} />
               <Route exact path="/product/card" element={<ListProdutcs />} />
               <Route exact path="/favorite" element={<FavoriteProductsPage />} />
-              {/* <Route exact path="*" element={<Error404/>} /> */}
+              <Route path="*" element={<Error404/>}></Route>
+              <Route exact path="/nosotros" element={<Team />} />
+
             </Routes>
           </main>
         {/* <Home/> */}
