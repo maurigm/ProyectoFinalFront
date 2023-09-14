@@ -1,28 +1,73 @@
 .footer {
     background-color: hsl(34, 100%, 38%); /* Cambia el color de fondo según tu diseño */
     color: #fff; /* Cambia el color del texto según tu diseño */
-    padding: 30px 0;
-    
+    padding: 30px 0;    
   }
 
+  .qr{
+    margin-left: -23px;
+  }
   
   .logo {
     max-width: 100px; /* Ajusta el tamaño del logo redondo */
+    margin-top: 20px;
   }
+
+
+.logo-container {
+  margin-top: 50px; /* Ajusta el valor según sea necesario */
+}
+
   
   .qr-code {
     max-width: 100px; /* Ajusta el tamaño del código QR */
   }
-  
+
+  /*ENLANCE 1*/
   .footer-links {
     list-style: none;
     padding: 0;
   }
   
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.2s; /* Agrega una transición suave para el efecto de zoom */
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+    transform: scale(1.1); /* Aplica un zoom del 10% al hacer hover */
+  }
+
+  /*ENLANCE 2*/
+  
+  .footer-linkss {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-linkss a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.2s; /* Agrega una transición suave para el efecto de zoom */
+  }
+  
+  .footer-linkss a:hover {
+    color: #0026ff;
+    text-decoration: underline;
+    transform: scale(1.1); /* Aplica un zoom del 10% al hacer hover */
+  }
+  
+
   .footer-links li {
     margin-bottom: 10px;
   }
-  
+
+  .txt{
+    color: white;
+  }
   .social-icons-container {
     margin-top: 40px; /* Agrega margen superior para separar los iconos de redes sociales del código QR */
   }
@@ -39,10 +84,32 @@
   .social-icons li {
     display: inline-block;
     margin-right: 10px; /* Espacio entre los iconos de redes sociales */
+    text-decoration: none; /* Evita subrayado de los enlaces */
+  transition: color 0.2s; /* Agrega una transición suave para el efecto de hover */
   }
   
-  .social-icons a {
-    color: #fff; /* Color de los iconos de redes sociales */
-    font-size: 24px; /* Tamaño de los iconos de redes sociales */
-    text-decoration: none;
-  }
+
+/* Añade este bloque de CSS a tu archivo de estilos */
+.social-icons li a .fab {
+  color: #fff; /* Establece el color inicial de los íconos a blanco */
+  transition: color 0.2s; /* Agrega una transición suave para el efecto de hover */
+  font-size: 24px; /* Tamaño de los iconos de redes sociales */
+
+}
+
+.social-icons li a:hover .facebook {
+  color: #1877f2; /* Cambia el color de Facebook al hacer hover */
+}
+
+.social-icons li a:hover .twitter {
+  color: #1da1f2; /* Cambia el color de Twitter al hacer hover */
+}
+
+.social-icons li a:hover .instagram {
+  color: #bc2a8d; /* Cambia el color de Instagram al hacer hover */
+}
+
+.social-icons li a:hover .github {
+  color: #000; /* Cambia el color de GitHub al hacer hover */
+}
+
