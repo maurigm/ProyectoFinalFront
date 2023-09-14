@@ -16,7 +16,7 @@ function FavoriteProductsPage() {
       <Row>
         {favoriteProducts.map((product) => (
           <Col key={product.id} md={4} sm={6}>
-            <Card className="mb-3">
+            <Card id="card-custom" className="mb-3">
               <Card.Body>
                 <Card.Img variant="top" src="src/public/assets/productoPrueba.png" />
                 <Card.Title>{product.name}</Card.Title>
