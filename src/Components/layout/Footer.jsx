@@ -16,8 +16,8 @@ function Footer() {
           <Col lg={3} md={3} sm={6}>
             <h5>Enlaces</h5>
             <ul className="footer-links">
-              <li><a href="#">Contacto</a></li>
-              <li><a href="#">Nosotros</a></li>
+              <li><a href="/contacto">Contacto</a></li>
+              <li><a href="/nosotros">Nosotros</a></li>
               <li><a href="#">Otro Enlace</a></li>
             </ul>
           </Col>
