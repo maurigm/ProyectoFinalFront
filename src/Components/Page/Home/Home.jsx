@@ -67,7 +67,7 @@ const MiComponente = () => {
 
 const Tarjeta = ({ titulo, contenido, imagenURL }) => {
   return (
-    <div className="card">
+    <div id="card-custom" className="card">
       <img src={imagenURL} className="card-img-top" alt={titulo} />
       <div className="card-body">
         <h5 className="card-title">{titulo}</h5>

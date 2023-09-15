@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import './nosotros.css'; // Archivo CSS para estilos personalizados
+import icon from '../../../assets/icon.png';
+import './nosotros.css'; 
 
 const teamMembers = [
   {
@@ -34,11 +35,11 @@ const Team = () => {
   return (
     <Container className=''>
       <h1 className="team-title">Nuestro Equipo</h1>
-      <Row>
+      <Row className='team-row'>
         {teamMembers.map((member, index) => (
           <Col key={index} lg={4} md={6} sm={12}>
             <Card className="team-card">
-              <Card.Img variant="top" src={member.image} alt={member.name} />
+              <Card.Img variant="top" src={icon} alt={member.name} />
               <Card.Body>
                 <Card.Title>{member.name}</Card.Title>
                 <Card.Text>{member.text}</Card.Text>

@@ -25,7 +25,7 @@ function MyNavbar() {
         <Nav className="me-auto">
           <Nav.Link href="/">Inicio</Nav.Link>
         </Nav>
-        <Nav className="ml-auto navbar-right">
+        <Nav className="ml-auto ">
           <Nav.Link href="#"><i className="fas fa-search"></i></Nav.Link>
 
           <Nav.Link href="/favorite"><i className="fas fa-star"></i></Nav.Link>
