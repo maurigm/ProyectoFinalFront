@@ -10,7 +10,7 @@ import './Nav.css';
 
 
 
-function BasicExample() {
+function MyNavbar() {
 
   return (
     <Navbar expand="lg" variant="dark" fixed="top">
