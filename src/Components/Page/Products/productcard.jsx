@@ -27,9 +27,10 @@ function ListProdutcs() {
 
 
     return (
-        <Container>
+        <Container className="list-products-container">
             <CardGroup>
-                <legend>Linea Ultralivianos</legend>
+                <div className="categorias mt-2">Categorías</div>
+                <legend className="text-cat mt-2">Linea Ultralivianos</legend>
                 <Row lg={5} md={3} sm={2} xs={1}>
                     <div>
                         <Card className="cardd">
@@ -127,7 +128,7 @@ function ListProdutcs() {
                         </Card>
                     </div>
                 </Row>
-                <legend>Linea PU/TPU</legend>
+                <legend className="text-cat mt-3">Linea PU/TPU</legend>
                 <Row lg={5} md={3} sm={2} xs={1}>
                     <div>
                         <Card className="cardd">
@@ -223,7 +224,7 @@ function ListProdutcs() {
                         </Card>
                     </div>
                 </Row>
-                <legend>Linea Mujer</legend>
+                <legend className="text-cat mt-3">Linea Mujer</legend>
                 <Row xl={5} md={3} sm={2} xs={1}>
                     <div>
                         <Card className="cardd">
