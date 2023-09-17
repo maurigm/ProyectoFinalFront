@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import './fav.css'
 
 function FavoriteProductsPage() {
   // Supongamos que tienes una lista de productos favoritos en tu estado
@@ -12,13 +13,13 @@ function FavoriteProductsPage() {
 
   return (
     <Container>
-      <h1>My favorite products</h1>
-      <Row>
+      <h1 className='favtitle'>My favorite products</h1>
+      <Row className='rowcardfav'>
         {favoriteProducts.map((product) => (
           <Col key={product.id} md={4} sm={6}>
             <Card id="card-custom" className="mb-3">
               <Card.Body>
-                <Card.Img variant="top" src="src/public/assets/productoPrueba.png" />
+                <Card.Img variant="top" className='favimage' src="src/public/assets/productoPrueba.png" />
                 <Card.Title>{product.name}</Card.Title>
                 <Card.Text>{product.description}</Card.Text>
                 <Button variant="danger">Eliminar de Favoritos</Button>

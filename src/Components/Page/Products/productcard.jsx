@@ -27,6 +27,7 @@ function ListProdutcs() {
 
 
     return (
+
         <Container className="list-products-container">
             <CardGroup>
                 <div className="categorias mt-2">Categorías</div>
@@ -128,6 +129,7 @@ function ListProdutcs() {
                         </Card>
                     </div>
                 </Row>
+
                 <legend className="text-cat mt-3">Linea PU/TPU</legend>
                 <Row lg={5} md={3} sm={2} xs={1}>
                     <div>
@@ -224,7 +226,9 @@ function ListProdutcs() {
                         </Card>
                     </div>
                 </Row>
+
                 <legend className="text-cat mt-3">Linea Mujer</legend>
+
                 <Row xl={5} md={3} sm={2} xs={1}>
                     <div>
                         <Card className="cardd">

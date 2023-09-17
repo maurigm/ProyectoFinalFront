@@ -14,7 +14,7 @@ function Footer() {
       <Container>
         <Row>
           <Col lg={3} md={3} sm={6} className="logo-container">
-            <Image src={logo} alt="logo" width="150" />
+            <Image src={logo} alt="logo" width="150" className="img-fluid" />
           </Col>
           <Col className='enlance1' lg={3} md={3} sm={6}>
            <h5>CONTACTANOS</h5>
@@ -42,7 +42,7 @@ function Footer() {
             </ul>
           </Col>
           <Col lg={3} md={3} sm={6}>
-            <Image className='qr' src={qr} alt="qr" width="150" />
+            <Image className='qr img-fluid' src={qr} alt="qr" width="150" img-fluid/>
             <h5>CÓDIGO QR</h5>
 
             <ul className="social-icons text-center" id="icon">

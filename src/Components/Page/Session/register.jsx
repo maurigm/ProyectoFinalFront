@@ -146,9 +146,9 @@ const RegistroUsuarios = () => {
               <Form.Text className="text-danger">{errors.password?.message}</Form.Text>
             </Form.Group>
 
-            <Button variant="primary" type="submit" className='botonRegistrar'
-              onMouseOver={(e) => (e.target.style.backgroundColor = "#654321")}
-              onMouseOut={(e) => (e.target.style.backgroundColor = "#8c7851")}
+            <Button variant="primary" type="submit" className='botonRegistrar text-white'
+              //onMouseOver={(e) => (e.target.style.backgroundColor = "#55868C")}
+              //onMouseOut={(e) => (e.target.style.backgroundColor = "#55868C")}
             >
               Registrar
             </Button>

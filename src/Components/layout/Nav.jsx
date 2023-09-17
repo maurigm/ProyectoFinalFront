@@ -23,13 +23,14 @@ function MyNavbar() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="/">Inicio</Nav.Link>
+          <Nav.Link className='textlink' href="/">Inicio</Nav.Link>
+          <Nav.Link className='textlink' href="/product/card">Productos</Nav.Link>
         </Nav>
         <Nav className="ml-auto ">
           <Nav.Link href="#"><i className="fas fa-search"></i></Nav.Link>
 
           <Nav.Link href="/favorite"><i className="fas fa-star"></i></Nav.Link>
-          <Nav.Link href="/product/card"><i className="fas fa-shopping-cart"></i></Nav.Link>
+          <Nav.Link href="/*"><i className="fas fa-shopping-cart"></i></Nav.Link>
           <LoginModal/>
           <RegisterModal/>
 
