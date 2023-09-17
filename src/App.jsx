@@ -9,6 +9,7 @@ import Home from "./Components/Page/Home/Home"
 import Footer from "./Components/layout/Footer";
 import Error404 from "./Components/Page/Error404/error404";
 import Team from "./Components/Page/Nosotros/nosotros";
+import PasswordRecovery from "./Components/Page/Session/recpassword";
 
 
 
@@ -28,6 +29,7 @@ function App() {
               <Route exact path="/favorite" element={<FavoriteProductsPage />} />
               <Route path="*" element={<Error404/>}></Route>
               <Route exact path="/nosotros" element={<Team />} />
+              <Route exact path="/recuperarcontrasenia" element={<PasswordRecovery />} />
 
             </Routes>
           </main>

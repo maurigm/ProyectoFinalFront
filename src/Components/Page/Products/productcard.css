@@ -10,3 +10,7 @@
     font-weight: bold;
     transform: scale(1.05); /* Hace que la tarjeta se agrande un poco al hacer hover */
   }
+
+  .titleprod{
+    margin-top: 3rem;
+  }

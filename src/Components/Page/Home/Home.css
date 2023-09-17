@@ -77,3 +77,11 @@
     font-weight: bold;
     transform: scale(1.05); /* Hace que la tarjeta se agrande un poco al hacer hover */
   }
+
+  .btn-group{
+    width: 8rem;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    
+  }

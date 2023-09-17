@@ -20,3 +20,7 @@ body{
     border-color: #007bff; /* Cambia el color del borde al hacer hover */
     color: #ffffff; /* Cambia el color del texto al hacer hover */
   }
+
+#btnlogin {
+    color: #55868C; 
+}

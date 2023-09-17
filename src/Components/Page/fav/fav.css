@@ -1,0 +1,15 @@
+.favtitle{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+}
+.favimage{
+    background-color: whitesmoke;
+    border-radius: 10%;
+    margin-bottom: 3rem;
+}
+.rowcardfav{
+    padding: 2rem;
+}
