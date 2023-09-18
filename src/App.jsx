@@ -1,12 +1,16 @@
+import "./App.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./Components/layout/Nav";
 import ListProdutcs from "./Components/Page/Products/productcard";
-import Login from "./Components/Page/Session/login";
-import Register from "./Components/Page/Session/register"
 import { useState } from "react";
 import FavoriteProductsPage from "./Components/Page/fav/fav";
+import Home from "./Components/Page/Home/Home"
 import Footer from "./Components/layout/Footer";
+import Error404 from "./Components/Page/Error404/error404";
+import Team from "./Components/Page/Nosotros/nosotros";
+import PasswordRecovery from "./Components/Page/Session/recpassword";
+
 
 
 
@@ -15,24 +19,25 @@ function App() {
   const [usuarioLogueado, setUsuarioLogueado] = useState(usuarioStorage);
   return (
     <>
-    <div>
-      <BrowserRouter>
-      <Nav/>
-      <main>
-        <Routes>
-          <Route exact path="/login" element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>} ></Route>
-          <Route exact path="/register" element={<Register></Register>} ></Route>
-          <Route exact path="/product/card" element={<ListProdutcs />} />
-          <Route exact path="/favorite" element={<FavoriteProductsPage />} />
-          {/* <Route exact path="*" element={<Error404/>} /> */}
-        </Routes>
-      </main>
-      <Login/>
-      <Register/>
-      <Footer/>
-      </BrowserRouter>
-      
-    </div>
+      <div>
+        <BrowserRouter>
+        <Nav/>
+          <main>
+            <Routes>
+              <Route exact path="/" element={<Home/>} />
+              <Route exact path="/product/card" element={<ListProdutcs />} />
+              <Route exact path="/favorite" element={<FavoriteProductsPage />} />
+              <Route path="*" element={<Error404/>}></Route>
+              <Route exact path="/nosotros" element={<Team />} />
+              <Route exact path="/recuperarcontrasenia" element={<PasswordRecovery />} />
+
+            </Routes>
+          </main>
+        {/* <Home/> */}
+        <Footer/>
+        </BrowserRouter>
+        
+      </div>
     </>
   )
 }

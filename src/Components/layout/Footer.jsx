@@ -1,41 +1,55 @@
 import React from 'react'
 import './Footer.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import logo from "../../assets/logo.png";
+import qr from '../../assets/datafiscal.png';
 
 
 
 function Footer() {
   return (
-    <footer className="footer bg-dark">
+    <footer className="footer">
       <Container>
         <Row>
-          <Col lg={3} md={3} sm={6}>
-            <img src="/e1b4489f-29ce-4ed5-aabf-9760d56a22b6.jpg" alt="Logo" className="rounded-circle logo" />
+          <Col lg={3} md={3} sm={6} className="logo-container">
+            <Image src={logo} alt="logo" width="150" className="img-fluid" />
+          </Col>
+          <Col className='enlance1' lg={3} md={3} sm={6}>
+           <h5>CONTACTANOS</h5>
+           <ul className="footer-links">
+          <li>
+           <FontAwesomeIcon icon={faHome} />
+          <a> Gral. Paz 576, San Miguel de Tucumán, Tucumán</a>
+          </li>
+          <li>
+          <FontAwesomeIcon icon={faPhone} />
+          <a> 381 - 451 - 0779</a>
+             </li>
+             <li className='txt'>
+                <FontAwesomeIcon className='mail' icon={faEnvelope} />
+                <a href="mailto:forgestep@calzadoindustrial.com"> forgestep@calzadoindustrial.com</a>
+             </li>
+           </ul>
           </Col>
           <Col lg={3} md={3} sm={6}>
-            <h5>Enlaces</h5>
-            <ul className="footer-links">
-              <li><a href="#">Contacto</a></li>
-              <li><a href="#">Nosotros</a></li>
+            <h5>ENLANCES</h5>
+            <ul className="footer-linkss">
+              <li><a href="/contacto">Contacto</a></li>
+              <li><a href="/nosotros">Nosotros</a></li>
               <li><a href="#">Otro Enlace</a></li>
             </ul>
           </Col>
           <Col lg={3} md={3} sm={6}>
-            <h5>Más Enlaces</h5>
-            <ul className="footer-links">
-              <li><a href="#">Enlace 1</a></li>
-              <li><a href="#">Enlace 2</a></li>
-              <li><a href="#">Enlace 3</a></li>
-            </ul>
-          </Col>
-          <Col lg={3} md={3} sm={6}>
-            <h5>Código QR</h5>
-            <img src="/descarga.png" alt="Código QR" className="qr-code" />
+            <Image className='qr img-fluid' src={qr} alt="qr" width="150" img-fluid/>
+            <h5>CÓDIGO QR</h5>
+
             <ul className="social-icons text-center" id="icon">
-              <li><a href="#"><i className="fab fa-facebook"></i></a></li>
-              <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i className="fab fa-github"></i></a></li> 
+             <li><a href="#"><i className="fab fa-facebook facebook"></i></a></li>
+             <li><a href="#"><i className="fab fa-twitter twitter"></i></a></li>
+             <li><a href="#"><i className="fab fa-instagram instagram"></i></a></li>
+             <li><a href="#"><i className="fab fa-github github"></i></a></li> 
             </ul>
           </Col>
         </Row>
