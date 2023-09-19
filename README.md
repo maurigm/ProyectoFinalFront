@@ -1,9 +1,5 @@
 #  *Proyecto Ecommerce Calzado Industrial: ForgeStep* 
 
-<div style = "text-align:center">
-<img src= "https://drive.google.com/file/d/1zvt_PwAkDu5RPNQ6O1KLjSq12olp6J-_/view?usp=drive_link"/>
-</div>
-
 
 ## Descripción del Proyecto 📃
 <hr>
