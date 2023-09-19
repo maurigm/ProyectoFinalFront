@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { login } from "../../helpers/queries";
 import { useForm } from "react-hook-form";
@@ -9,6 +9,33 @@ import Swal from "sweetalert2"
 import "sweetalert2/dist/sweetalert2.css"
 import "./login.css"
 import { FaUserLock } from 'react-icons/fa';
+import instance from '../../../../conection/axios';
+
+const Logins =  () => {
+
+  const logins = async () => {
+    const user = {
+      email: values.email,
+      password: values.password,
+    }
+    try {
+      const res = await instance.post("/auth/login", user)
+      console.log(res); 
+    } catch (error) {
+      console.log(error);
+    }
+
+  }
+}
+
+useEffect(() => {
+  logins()
+  return () => {
+    second
+  }
+}, [])
+
+
 
 
 
@@ -17,6 +44,7 @@ function LoginModal() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  
 
   return (
     <>
