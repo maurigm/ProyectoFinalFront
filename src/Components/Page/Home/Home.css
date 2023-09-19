@@ -19,6 +19,11 @@
     text-align: left; 
 }
   */
+
+  .h-custom {
+    height: 300px; /* Cambia este valor según la altura que desees */
+  }
+  
   
   h2 {
     font-size: 1.5rem;
@@ -34,34 +39,27 @@
 
 
   .btn-group {
-     width: 8rem;
+    width: 100%; /* Cambiado a 100% para que se adapte al contenedor padre */
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    margin-left: 55rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto; /* Cambiado a auto para centrar sin importar el tamaño de pantalla */
   }
   
   .btn-group a {
-    min-width: 200px; /* Establece un ancho mínimo para el botón */
-    margin: 0 5px; /* Espacio entre los botones */
-    text-align: center; /* Alinea el texto en el centro */
+    flex: 1; /* Hace que los botones se expandan para llenar el espacio disponible */
+    max-width: 200px; /* Establece un ancho máximo para el botón */
+    margin: 0 5px;
+    text-align: center;
   }
   
   .btn-group a.btn {
-    transition: all 0.3s; /* Transición para el efecto hover */
+    transition: all 0.3s;
   }
   
   .btn-group a.btn:hover {
-    background-color: #0056b3; /* Cambio de color al pasar el mouse */
-  }
-  
-
-  .btn-group a.btn:hover {
-    background-color: hsl(34, 100%, 38%); /* Cambio de color al pasar el mouse */
-    transform: scale(1.05); /* Hace que la tarjeta se agrande un poco al hacer hover */
+    background-color: #0056b3;
+    transform: scale(1.05);
   }
   
   

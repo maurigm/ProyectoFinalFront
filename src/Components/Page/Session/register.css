@@ -1,7 +1,7 @@
 .custom-button:hover {
     background-color: hsl(211, 100%, 50%); /* Cambia el color de fondo al hacer hover */
     border-color: #007bff; /* Cambia el color del borde al hacer hover */
-    
+    transform: scale(1.05);
   }
 
   /* .botonRegistrar{
