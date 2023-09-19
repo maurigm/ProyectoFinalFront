@@ -5,26 +5,20 @@
   }
 
   .mi-componente {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: #272932; /* Color de fondo del componente */
-    text-align: center;
   }
-  
+
+   /*  
   .texto-izquierda {
-    
+ 
     padding: 2em;
-    color: #333; /* Color del texto */
+    color: #ffffff; 
     display: block;
-    display: inline-block; /* Esto permite que el contenido se centre horizontalmente */
-    text-align: left; /* Alinea el texto dentro de texto-izquierda a la izquierda */
+    display: inline-block; 
+    text-align: left; 
 }
-  
+  */
   
   h2 {
     font-size: 1.5rem;
@@ -37,10 +31,43 @@
     margin-bottom: 20px;
     color:white;
   }
+
+
+  .btn-group {
+     width: 8rem;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin-left: 55rem;
+  }
   
-  .cta-button {
-    background-color: #007bff; /* Color del botón */
-    color: #fff; /* Color del texto del botón */
+  .btn-group a {
+    min-width: 200px; /* Establece un ancho mínimo para el botón */
+    margin: 0 5px; /* Espacio entre los botones */
+    text-align: center; /* Alinea el texto en el centro */
+  }
+  
+  .btn-group a.btn {
+    transition: all 0.3s; /* Transición para el efecto hover */
+  }
+  
+  .btn-group a.btn:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+  }
+  
+
+  .btn-group a.btn:hover {
+    background-color: hsl(34, 100%, 38%); /* Cambio de color al pasar el mouse */
+    transform: scale(1.05); /* Hace que la tarjeta se agrande un poco al hacer hover */
+  }
+  
+  
+  /*.cta-button {
+    background-color: #007bff;
+    color: #fff; 
     padding: 10px 20px;
     font-size: 1rem;
     border: none;
@@ -50,14 +77,13 @@
   }
   
   .cta-button:hover {
-    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+    background-color: #0056b3; 
   }
   
   .imagen-derecha img {
     max-width: 50%;
     height: auto;
-  }
-
+  }*/
 
   /*Estilos en las cards*/
 
@@ -78,10 +104,3 @@
     transform: scale(1.05); /* Hace que la tarjeta se agrande un poco al hacer hover */
   }
 
-  .btn-group{
-    width: 8rem;
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    
-  }
