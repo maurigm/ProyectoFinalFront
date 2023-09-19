@@ -61,8 +61,8 @@ const MiComponente = () => {
         <p className='text-center'>La nueva línea FogeStep desafía todos los límites del calzado de seguridad al incorporar la tecnología más exitosa del mundo del running para brindarte una amortiguación y flexibilidad nunca antes vista.
 
         La revolucionaria suela con un núcleo de Infinergy® by BASF te otorga un retorno de energía de más del 55% en cada paso y mejora notablemente la circulación para darte una capacidad de recuperación excepcional y que te sientas menos cansado al final del día, tal como sucede con los atletas, pero en el trabajo.</p>
-        <div className=' conteiner btn-group'>
-          <a href="/nosotros" class="btn btn-primary active" aria-current="page">Mas Informacion</a>
+        <div className='btn-group'>
+          <a href="/nosotros" className="btn btn-primary active" aria-current="page">Más Información</a>
         </div>
         
       </div>
