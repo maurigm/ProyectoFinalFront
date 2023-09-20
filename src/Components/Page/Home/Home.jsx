@@ -7,6 +7,7 @@ import "./home.css";
 import zapato1 from "../../../assets/zapato1.jpg";
 import zapato2 from "../../../assets/zapato2.jpg";
 import zapato3 from "../../../assets/zapato3.jpg";
+import SearchBar from '../Busqueda/busqueda';
 //import logo from "../../../assets/logo.png"
 
 
@@ -127,6 +128,7 @@ function App() {
       <Sliders />
       <MiComponente />
       <ComponenteConTarjetas/>
+      
      
     </>
   );

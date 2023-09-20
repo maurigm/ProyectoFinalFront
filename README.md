@@ -58,7 +58,7 @@ git clone Link del repositorio
 Link de netlify : 
 
 ### Autores 👣
-+ Mauro Diaz Santilli [GitHub]()
+
 + Mauricio Muñoz
 + Gaston Vargas
 + Sofia Lazarte
