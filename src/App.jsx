@@ -10,12 +10,9 @@ import Footer from "./Components/layout/Footer";
 import Error404 from "./Components/Page/Error404/error404";
 import Team from "./Components/Page/Nosotros/nosotros";
 import PasswordRecovery from "./Components/Page/Session/recpassword";
-<<<<<<< HEAD
 import Cart from "./Components/Page/Cart/Cart";
-=======
 import Contacto from "./Components/Page/contacto/contacto";
 import SearchBar from "./Components/Page/Busqueda/busqueda";
->>>>>>> ed6911927e17f8ffbf9adf39466a5dc0acaee0ce
 
 
 
