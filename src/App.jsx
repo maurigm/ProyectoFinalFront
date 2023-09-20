@@ -33,8 +33,6 @@ function App() {
               <Route exact path="/nosotros" element={<Team />} />
               <Route exact path="/recuperarcontrasenia" element={<PasswordRecovery />} />
               <Route exact path="/contacto" element={<Contacto />} />
-              <Route exact path="/busqueda" element={<SearchBar />} />
-
             </Routes>
           </main>
         
