@@ -37,7 +37,7 @@ function App() {
 
             </Routes>
           </main>
-        {/* <Home/> */}
+        
         <Footer/>
         </BrowserRouter>
         
