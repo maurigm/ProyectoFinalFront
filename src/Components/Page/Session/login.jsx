@@ -8,6 +8,8 @@ import { Card, Form } from 'react-bootstrap';
 import Swal from "sweetalert2"
 import "sweetalert2/dist/sweetalert2.css"
 import "./login.css"
+import { FaUserLock } from 'react-icons/fa';
+
 
 
 function LoginModal() {
@@ -18,8 +20,8 @@ function LoginModal() {
 
   return (
     <>
-      <Button id="buttonlogin" variant="primary" onClick={handleShow}>
-        Iniciar sesion
+      <Button id="buttonlogin" variant="primary" className="custom-button" onClick={handleShow}>
+      <FaUserLock />
       </Button>
 
       <Modal show={show} onHide={handleClose}>
@@ -111,14 +113,16 @@ const Login = ({ setUsuarioLogueado }) => {
             </Form.Group>
 
             <Button
+              id='btnlogin'
               variant="primary"
               type="submit"
-              className='botonRegistrar'
-              onMouseOver={(e) => (e.target.style.backgroundColor = "#654321")}
-              onMouseOut={(e) => (e.target.style.backgroundColor = "#8c7851")}
+              className='text-white'
             >
               Ingresar
             </Button>
+            <div className='mt-3'>
+              <a href="/recuperarcontrasenia">Olvidaste tu contraseña?<i className="text-dark"></i></a>
+            </div>
           </Form>
         </Card.Body>
       </Card>

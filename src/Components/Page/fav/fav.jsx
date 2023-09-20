@@ -1,34 +1,48 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-function FavoriteProductsPage() {
-  // Supongamos que tienes una lista de productos favoritos en tu estado
-  const [favoriteProducts, setFavoriteProducts] = useState([
-    { id: 1, name: 'Product 1', description: 'Descripción del Producto 1' },
-    { id: 2, name: 'Product 2', description: 'Descripción del Producto 2' },
-    { id: 3, name: 'Product 3', description: 'Descripción del Producto 3' },
-    // Agrega más productos favoritos aquí
-  ]);
+const FavoritesPage = () => {
+  const [favorites, setFavorites] = useState([]);
+
+  useEffect(() => {
+    // Realiza una solicitud GET para obtener los productos favoritos
+    axios.get('/favorites/user_id').then((response) => {
+      setFavorites(response.data);
+    });
+  }, []);
+
+  const handleDelete = (id) => {
+    // Realiza una solicitud DELETE para eliminar un producto favorito
+    axios.delete(`/favorites/${id}`).then((response) => {
+      if (response.status === 200) {
+        // Actualiza la lista de favoritos después de eliminar un producto
+        setFavorites(favorites.filter((fav) => fav._id !== id));
+      } else {
+        // Maneja errores aquí si es necesario
+      }
+    });
+  };
 
   return (
-    <Container>
-      <h1>My favorite products</h1>
-      <Row>
-        {favoriteProducts.map((product) => (
-          <Col key={product.id} md={4} sm={6}>
-            <Card className="mb-3">
-              <Card.Body>
-                <Card.Img variant="top" src="src/public/assets/productoPrueba.png" />
-                <Card.Title>{product.name}</Card.Title>
-                <Card.Text>{product.description}</Card.Text>
-                <Button variant="danger">Eliminar de Favoritos</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    <div>
+      <h1>Tus Favoritos</h1>
+      <ul>
+        {favorites.length > 0 ? (
+          favorites.map((favorite) => (
+            <li key={favorite._id}>
+              <p>Marca: {favorite.product_id.mark}</p>
+              <p>Modelo: {favorite.product_id.model}</p>
+              <p>Precio: {favorite.product_id.price}</p>
+              <button onClick={() => handleDelete(favorite._id)}>Eliminar</button>
+            </li>
+          ))
+        ) : (
+          <p>No tienes productos favoritos.</p>
+        )}
+      </ul>
+    </div>
   );
-}
+};
 
-export default FavoriteProductsPage;
+export default FavoritesPage;
+

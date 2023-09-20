@@ -8,6 +8,19 @@ body{
 
 #buttonlogin {
     font-size: 15px;
-    background-color: blueviolet;
+    background-color: #007bff(56, 56, 56, 0.459);
+    margin-right: 3px;
+    border-color: #007bff;
+    color: #ffffff;
 }
 /*------------Fin de Login-------------*/
+
+.custom-button:hover {
+    background-color: #007bff; /* Cambia el color de fondo al hacer hover */
+    border-color: #007bff; /* Cambia el color del borde al hacer hover */
+    color: #ffffff; /* Cambia el color del texto al hacer hover */
+  }
+
+#btnlogin {
+    color: #55868C; 
+}

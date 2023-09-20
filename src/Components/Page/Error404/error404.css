@@ -1,6 +1,26 @@
+
+.mainSection{
+    background-color: white;
+    margin-bottom: 20px;
+}
 .error404-texto {
     font-size: 24px; /* Tamaño de fuente */
     font-weight: bold; /* Peso de la fuente */
-    color: rgb(238, 255, 0); /* Color de texto */
+    color: rgb(49, 49, 49); /* Color de texto */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.781); /* Propiedad de sombra */
+}
+
+@media (max-width: 768px) {
+    .error404-img {
+      width: 80%;
+    }
+
+  }
+  
+.error404-texto {
+    font-size: 2rem; 
+    font-weight: bold; 
+    color: rgba(230, 226, 11, 0.932); 
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.781); 
+
 }

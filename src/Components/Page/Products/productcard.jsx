@@ -1,6 +1,7 @@
 import React from "react";
 import { CardGroup, Card, Container, Row, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import './productcard.css';
 
 const images = [
     ["https://www.funcionalweb.com/sites/default/files/2019-08/CITY%20BLACK_0.png"],
@@ -26,14 +27,16 @@ function ListProdutcs() {
 
 
     return (
-        <Container>
+
+        <Container className="list-products-container">
             <CardGroup>
-                <legend>Linea Ultralivianos</legend>
+                <div className="categorias mt-2">Categorías</div>
+                <legend className="text-cat mt-2">Linea Ultralivianos</legend>
                 <Row lg={5} md={3} sm={2} xs={1}>
                     <div>
-                        <Card>
+                        <Card className="cardd">
                             <Card.Img variant="top" src={images[0]} />
-                            <Card.Body>
+                            <Card.Body >
                                 <Card.Title>City</Card.Title>
                                 <Card.Text>
                                     Zapato urbano ultraliviano de seguridad. Cuero 100% natural,
@@ -42,15 +45,15 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <div className='d-flex align-items-center justify-content-between'>
-                                    <Link to="/product/create" className='btn-success text-decoration-none text-center'>Buy</Link>
-                                    <Link to="/product/favorite" className='btn-warning text-decoration-none text-center'>Favorite</Link>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
                                 </div>
                             </Card.Footer>
                         </Card>
                     </div>
                     <div>
-                        <Card>
+                        <Card className="cardd">
                             <Card.Img variant="top" src={images[1]} />
                             <Card.Body>
                                 <Card.Title>Frontier</Card.Title>
@@ -69,7 +72,7 @@ function ListProdutcs() {
                         </Card>
                     </div>
                     <div>
-                        <Card>
+                        <Card className="cardd">
                             <Card.Img variant="top" src={images[2]} />
                             <Card.Body>
                                 <Card.Title>Horizon</Card.Title>
@@ -88,7 +91,7 @@ function ListProdutcs() {
                         </Card>
                     </div>
                     <div>
-                        <Card>
+                        <Card className="cardd">
                             <Card.Img variant="top" src={images[3]} />
                             <Card.Body>
                                 <Card.Title>Soul</Card.Title>
@@ -107,7 +110,7 @@ function ListProdutcs() {
                         </Card>
                     </div>
                     <div>
-                        <Card>
+                        <Card className="cardd">
                             <Card.Img variant="top" src={images[4]} />
                             <Card.Body>
                                 <Card.Title>Street</Card.Title>
@@ -126,10 +129,11 @@ function ListProdutcs() {
                         </Card>
                     </div>
                 </Row>
-                <legend>Linea PU/TPU</legend>
+
+                <legend className="text-cat mt-3">Linea PU/TPU</legend>
                 <Row lg={5} md={3} sm={2} xs={1}>
                     <div>
-                        <Card>
+                        <Card className="cardd">
                             <Card.Img variant="top" src={images[5]} />
                             <Card.Body>
                                 <Card.Title>Rander</Card.Title>
@@ -139,12 +143,15 @@ function ListProdutcs() {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <small className="text-muted">Last updated 3 mins ago</small>
+                            <div className='d-flex align-items-center justify-content-between'>
+                                    <Button to="/product/create" variant="outline-success" className='text-decoration-none text-center'>Buy</Button>
+                                    <Button to="/product/favorite" variant='outline-warning' className='text-decoration-none text-center'>Favorite</Button>
+                                </div>
                             </Card.Footer>
                         </Card>
                     </div>
                     <div>
-                        <Card>
+                        <Card className="cardd"> 
                             <Card.Img variant="top" src={images[6]} />
                             <Card.Body>
                                 <Card.Title>Terra</Card.Title>
@@ -162,7 +169,7 @@ function ListProdutcs() {
                         </Card>
                     </div>
                     <div>
-                        <Card>
+                        <Card className="cardd">
                             <Card.Img variant="top" src={images[7]} />
                             <Card.Body>
                                 <Card.Title>Lander</Card.Title>
@@ -181,7 +188,7 @@ function ListProdutcs() {
                         </Card>
                     </div>
                     <div>
-                        <Card>
+                        <Card className="cardd">
                             <Card.Img variant="top" src={images[8]} />
                             <Card.Body>
                                 <Card.Title>Drill</Card.Title>
@@ -200,7 +207,7 @@ function ListProdutcs() {
                         </Card>
                     </div>
                     <div>
-                        <Card>
+                        <Card className="cardd">
                             <Card.Img variant="top" src={images[9]} />
                             <Card.Body>
                                 <Card.Title>Tracker</Card.Title>
@@ -219,10 +226,12 @@ function ListProdutcs() {
                         </Card>
                     </div>
                 </Row>
-                <legend>Linea Mujer</legend>
+
+                <legend className="text-cat mt-3">Linea Mujer</legend>
+
                 <Row xl={5} md={3} sm={2} xs={1}>
                     <div>
-                        <Card>
+                        <Card className="cardd">
                             <Card.Img variant="top" src={images[10]} />
                             <Card.Body>
                                 <Card.Title>Maui</Card.Title>
@@ -241,7 +250,7 @@ function ListProdutcs() {
                         </Card>
                     </div>
                     <div>
-                        <Card>
+                        <Card className="cardd">
                             <Card.Img variant="top" src={images[11]} />
                             <Card.Body>
                                 <Card.Title>Capri</Card.Title>
@@ -260,7 +269,7 @@ function ListProdutcs() {
                         </Card>
                     </div>
                     <div>
-                        <Card>
+                        <Card className="cardd">
                             <Card.Img variant="top" src={images[12]} />
                             <Card.Body>
                                 <Card.Title>Bali</Card.Title>
@@ -279,7 +288,7 @@ function ListProdutcs() {
                         </Card>
                     </div>
                     <div>
-                        <Card>
+                        <Card className="cardd">
                             <Card.Img variant="top" src={images[13]} />
                             <Card.Body>
                                 <Card.Title>3002</Card.Title>
@@ -298,7 +307,7 @@ function ListProdutcs() {
                         </Card>
                     </div>
                     <div>
-                        <Card>
+                        <Card className="cardd"> 
                             <Card.Img variant="top" src={images[14]} />
                             <Card.Body>
                                 <Card.Title>3901</Card.Title>
