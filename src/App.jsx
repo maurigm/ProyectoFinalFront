@@ -11,7 +11,7 @@ import Error404 from "./Components/Page/Error404/error404";
 import Team from "./Components/Page/Nosotros/nosotros";
 import PasswordRecovery from "./Components/Page/Session/recpassword";
 import Contacto from "./Components/Page/contacto/contacto";
-import SearchBar from "./Components/Page/Busqueda/busqueda";
+
 
 
 

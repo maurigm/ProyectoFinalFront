@@ -1,5 +1,7 @@
+// SearchBar.js
 import React, { useState } from 'react';
 import { Form, Button, Modal } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -7,26 +9,26 @@ const SearchBar = () => {
   const [resultados, setResultados] = useState([]);
 
   const zapatos = [
-    'City',
-    'Frontier',
-    'Horizon',
-    'Soul',
-    'Street',
-    'Rander',
-    'Terra',
-    'Lander',
-    'Drill',
-    'Tracker',
-    'Maui',
-    'Capri',
-    'Bali',
-    '3002',
-    '3901'
+    { id: 1, nombre: 'City' },
+    { id: 2, nombre: 'Frontier' },
+    { id: 3, nombre: 'Horizon' },
+    { id: 4, nombre: 'Soul' },
+    { id: 5, nombre: 'Street' },
+    { id: 6, nombre: 'Rander' },
+    { id: 7, nombre: 'Terra' },
+    { id: 8, nombre: 'Lander' },
+    { id: 9, nombre: 'Drill' },
+    { id: 10, nombre: 'Tracker' },
+    { id: 11, nombre: 'Maui' },
+    { id: 12, nombre: 'Capri' },
+    { id: 13, nombre: 'Bali' },
+    { id: 14, nombre: '3002' },
+    { id: 15, nombre: '3901' }
   ];
 
   const handleSearch = () => {
     const keyword = searchTerm.toLowerCase();
-    const resultados = zapatos.filter(zapato => zapato.toLowerCase().includes(keyword));
+    const resultados = zapatos.filter(zapato => zapato.nombre.toLowerCase().includes(keyword));
 
     if (resultados.length > 0) {
       setResultados(resultados);
@@ -69,8 +71,10 @@ const SearchBar = () => {
         <Modal.Body>
           {resultados.length > 0 ? (
             <ul>
-              {resultados.map((resultado, index) => (
-                <li key={index}>{resultado}</li>
+              {resultados.map((resultado) => (
+                <li key={resultado.id}>
+                  <Link to={`/product/${resultado.id}`}>{resultado.nombre}</Link>
+                </li>
               ))}
             </ul>
           ) : (
