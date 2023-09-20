@@ -6,6 +6,7 @@ import RegisterModal from '../Page/Session/register';
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import './Nav.css';
+import SearchBar from '../Page/Busqueda/busqueda';
 
 
 
@@ -27,8 +28,8 @@ function MyNavbar() {
           <Nav.Link className='textlink' href="/product/card">Productos</Nav.Link>
         </Nav>
         <Nav className="ml-auto ">
-          <Nav.Link href="#"><i className="fas fa-search"></i></Nav.Link>
-
+          {/* <Nav.Link href="#"><i className="fas fa-search"></i></Nav.Link> */}
+          <SearchBar/>
           <Nav.Link href="/favorite"><i className="fas fa-star"></i></Nav.Link>
           <Nav.Link href="/cart"><i className="fas fa-shopping-cart"></i></Nav.Link>
           <LoginModal/>

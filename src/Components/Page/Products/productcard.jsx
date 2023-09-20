@@ -28,11 +28,11 @@ function ListProdutcs() {
 
     return (
 
-        <Container className="list-products-container">
+        <Container className="list-products-container mt-5">
             <CardGroup>
-                <div className="categorias mt-2">Categorías</div>
-                <legend className="text-cat mt-2">Linea Ultralivianos</legend>
-                <Row lg={5} md={3} sm={2} xs={1}>
+                <div className="categorias mt-5 text-white text-center fw-bold">Nuestros Productos</div>
+                <legend className="text-cat mt-5 text-white">Linea Ultralivianos</legend>
+                <Row lg={5} md={3} sm={2} xs={1} className="mt-3 mb-5">
                     <div>
                         <Card className="cardd">
                             <Card.Img variant="top" src={images[0]} />
@@ -130,8 +130,8 @@ function ListProdutcs() {
                     </div>
                 </Row>
 
-                <legend className="text-cat mt-3">Linea PU/TPU</legend>
-                <Row lg={5} md={3} sm={2} xs={1}>
+                <legend className="text-cat  text-white">Linea PU/TPU</legend>
+                <Row lg={5} md={3} sm={2} xs={1} className="mt-3 mb-5">
                     <div>
                         <Card className="cardd">
                             <Card.Img variant="top" src={images[5]} />
@@ -227,9 +227,9 @@ function ListProdutcs() {
                     </div>
                 </Row>
 
-                <legend className="text-cat mt-3">Linea Mujer</legend>
+                <legend className="text-cat  text-white">Linea Mujer</legend>
 
-                <Row xl={5} md={3} sm={2} xs={1}>
+                <Row xl={5} md={3} sm={2} xs={1} className="mt-3 mb-5">
                     <div>
                         <Card className="cardd">
                             <Card.Img variant="top" src={images[10]} />
