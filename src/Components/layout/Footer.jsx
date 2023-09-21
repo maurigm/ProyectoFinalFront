@@ -3,7 +3,7 @@ import './Footer.css';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import logo from "../../assets/logo.png";
+// import logo from "../../assets/logo.png";
 import qr from '../../assets/datafiscal.png';
 
 
