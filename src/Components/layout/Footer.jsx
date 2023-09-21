@@ -14,7 +14,7 @@ function Footer() {
       <Container>
         <Row>
           <Col lg={3} md={3} sm={6} className="logo-container">
-            <Image src={logo} alt="logo" width="150" className="img-fluid" />
+            {/* <Image src={logo} alt="logo" width="150" className="img-fluid" /> */}
           </Col>
           <Col className='enlance1' lg={3} md={3} sm={6}>
            <h5>CONTACTANOS</h5>
