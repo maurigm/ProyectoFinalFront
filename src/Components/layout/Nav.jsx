@@ -3,11 +3,10 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import '@fortawesome/fontawesome-free/css/all.css';
 import LoginModal from '../Page/Session/login';
 import RegisterModal from '../Page/Session/register';
-//import logo from "../../assets/logo.png";
-import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
+import { Link , NavLink } from "react-router-dom";
 import './Nav.css';
 import SearchBar from '../Page/Busqueda/busqueda';
-
 
 
 
@@ -16,22 +15,22 @@ function MyNavbar() {
   return (
     <Navbar expand="lg" variant="dark" fixed="top">
     <Container>
-      <Navbar.Brand href="#">
+      <Navbar.Brand to="/">
       <Link to="/">
-          {/* <img src={logo} alt="logo" width="100" /> */}
+          <img src={logo} alt="logo" width="100" />
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link className='textlink' href="/">Inicio</Nav.Link>
-          <Nav.Link className='textlink' href="/product/card">Productos</Nav.Link>
+          <NavLink className='textlink nav-link active' to="/">Inicio</NavLink>
+          <NavLink className='textlink nav-link active' to="/product/card">Productos</NavLink>
         </Nav>
         <Nav className="ml-auto ">
-          {/* <Nav.Link href="#"><i className="fas fa-search"></i></Nav.Link> */}
+          {/* <NavLink to="#"><i className="fas fa-search"></i></NavLink> */}
           <SearchBar/>
-          <Nav.Link href="/favorite"><i className="fas fa-star"></i></Nav.Link>
-          <Nav.Link href="/cart"><i className="fas fa-shopping-cart"></i></Nav.Link>
+          <NavLink className='nav-link active' to="/favorite"><i className="fas fa-star"></i></NavLink>
+          <NavLink className='nav-link active' to="/cart"><i className="fas fa-shopping-cart"></i></NavLink>
           <LoginModal/>
           <RegisterModal/>
 
