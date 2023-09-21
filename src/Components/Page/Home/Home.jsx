@@ -3,7 +3,7 @@ import { Carousel } from 'react-bootstrap';
 import slider1 from "../../../assets/slider 1.jpg";
 import slider2 from "../../../assets/slider2.jpg";
 import slider3 from "../../../assets/slider3.jpg";
-import "./home.css";
+import "./Home.css";
 import zapato1 from "../../../assets/zapato1.jpg";
 import zapato2 from "../../../assets/zapato2.jpg";
 import zapato3 from "../../../assets/zapato3.jpg";
