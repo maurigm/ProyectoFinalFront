@@ -31,7 +31,7 @@ function MyNavbar() {
           {/* <Nav.Link href="#"><i className="fas fa-search"></i></Nav.Link> */}
           <SearchBar/>
           <Nav.Link href="/favorite"><i className="fas fa-star"></i></Nav.Link>
-          <Nav.Link href="/*"><i className="fas fa-shopping-cart"></i></Nav.Link>
+          <Nav.Link href="/cart"><i className="fas fa-shopping-cart"></i></Nav.Link>
           <LoginModal/>
           <RegisterModal/>
 
