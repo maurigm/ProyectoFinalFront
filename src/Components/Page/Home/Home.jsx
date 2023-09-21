@@ -8,7 +8,7 @@ import zapato1 from "../../../assets/zapato1.jpg";
 import zapato2 from "../../../assets/zapato2.jpg";
 import zapato3 from "../../../assets/zapato3.jpg";
 import SearchBar from '../Busqueda/busqueda';
-import logo from "../../../assets/logo.png"
+//import logo from "../../../assets/logo.png"
 
 
 
@@ -59,7 +59,7 @@ const MiComponente = () => {
   return (
     <div className="mi-componente text-center">
       <div className="texto-izquierda">
-        <img src={logo} className="img-fluid" alt={titulo} />
+        {/* <img src={logo} className="img-fluid" alt={titulo} /> */}
         <h2 className='text-center fs-1'>Nuestra Identidad</h2>
         <p className='text-center'>La nueva línea FogeStep desafía todos los límites del calzado de seguridad al incorporar la tecnología más exitosa del mundo del running para brindarte una amortiguación y flexibilidad nunca antes vista.
 

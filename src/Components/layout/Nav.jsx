@@ -3,7 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import '@fortawesome/fontawesome-free/css/all.css';
 import LoginModal from '../Page/Session/login';
 import RegisterModal from '../Page/Session/register';
-import logo from "../../assets/logo.png";
+//import logo from "../../assets/logo.png";
 import { Link , NavLink } from "react-router-dom";
 import './Nav.css';
 import SearchBar from '../Page/Busqueda/busqueda';
@@ -17,7 +17,7 @@ function MyNavbar() {
     <Container>
       <Navbar.Brand to="/">
       <Link to="/">
-          <img src={logo} alt="logo" width="100" />
+          {/* <img src={logo} alt="logo" width="100" /> */}
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

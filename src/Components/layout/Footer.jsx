@@ -3,7 +3,7 @@ import './Footer.css';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import logo from "../../assets/logo.png";
+// import logo from "../../assets/logo.png";
 import qr from '../../assets/datafiscal.png';
 
 
@@ -14,7 +14,7 @@ function Footer() {
       <Container>
         <Row>
           <Col lg={3} md={3} sm={6} className="logo-container">
-            <Image src={logo} alt="logo" width="150" className="img-fluid" />
+            {/* <Image src={logo} alt="logo" width="150" className="img-fluid" /> */}
           </Col>
           <Col className='enlance1' lg={3} md={3} sm={6}>
            <h5>CONTACTANOS</h5>
