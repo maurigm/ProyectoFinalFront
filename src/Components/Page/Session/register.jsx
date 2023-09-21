@@ -13,7 +13,6 @@ import { FaUserPlus } from 'react-icons/fa';
 
 function RegisterModal() {
     const [show, setShow] = useState(false);
-  
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
   
@@ -66,7 +65,7 @@ const RegistroUsuarios = () => {
       newData.isAdmin = false;
     }
     const nuevoUsuario = {...newData, estado:true }
-    crearUsuario(nuevoUsuario)
+    axios.post('/api/auth/register', nuevoUsuario)
     
       .then((respuesta) => {
         if (respuesta.ok) {
